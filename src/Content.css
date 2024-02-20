@@ -1,0 +1,51 @@
+.animate {
+    animation: rotation 2s ease;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .textScroll {
+    animation: textScroll 2s ease;
+  }
+  
+  @keyframes textScroll {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .textDrop {
+    animation: textDrop 2s linear;
+  }
+  
+  @keyframes textDrop {
+    0% {
+      transform: translateY(-100%);
+    }
+    20% {
+      transform: translateY(0%);
+    }
+    40% {
+      transform: translateY(-20%);
+    } 
+    60% {
+        transform: translateY(0%); 
+    }
+    80% {
+      transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%); 
+    }
+  }
+  
