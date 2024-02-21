@@ -9,7 +9,7 @@ function Content() {
   const { theme } = useContext(themeContext);
 
   return (
-    <div className={`xl:flex xl:flex-row flex flex-col justify-around items-center min-w-screen min-h-[90vh] xl:px-10 ${theme === 'dark' ? 'bg-slate-900' : ''}`}>
+    <div className={`xl:flex xl:flex-row flex flex-col justify-around items-center min-w-screen min-h-[85vh] xl:px-10 ${theme === 'dark' ? 'bg-slate-900' : ''}`}>
       <div className="flex flex-col gap-6 xl:w-1/4 w-4/5">
         <h1 className={`textDrop mt-5 md:mt-0 font-extrabold w-full text-center text-2xl md:text-4xl lg:text-5xl xl:text-7xl ${theme === 'dark' ? 'text-white' : ''}`}>
           YOUR FEET DESERVE THE BEST

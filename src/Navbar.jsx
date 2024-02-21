@@ -27,8 +27,8 @@ function Navbar() {
       <div>
         <img onClick={toggleTheme} className="cursor-pointer w-8 h-8" src={theme === 'dark' ? day : night} alt="themeIcon" />
       </div>
-      <div className="w-auto flex justify-center">
-        <button className={`xl:w-32 xl:h-9 xl:p-0 p-2 w-11/12 max-w-40 h-3/4 font-bold text-white ${theme === 'dark' ? 'bg-cyan-600' : 'bg-red-600'}`}>Login</button>
+      <div className="w-1/3 flex justify-end">
+        <button className={`xl:w-32 xl:h-9 xl:p-0 px-3 py-2 w-11/12 max-w-40 h-3/4 font-bold text-white ${theme === 'dark' ? 'bg-cyan-600' : 'bg-red-600'}`}>Login</button>
       </div>
     </div>
   );
