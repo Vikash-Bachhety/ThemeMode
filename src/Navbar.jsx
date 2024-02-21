@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <div className={`flex max-w-screen justify-between mx-5 items-center h-16 ${theme === 'dark' ? 'bg-slate-900' : ''}`}>
+    <div className={`flex max-w-screen justify-between px-5 items-center h-16 ${theme === 'dark' ? 'bg-slate-900' : ''}`}>
       <div>
         <img className={`xl:w-20 xl:h-14 w-14 h-10 ${theme === 'dark' ? 'invert' : ''}`} src={Logo} alt="" />
       </div>
