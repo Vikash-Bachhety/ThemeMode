@@ -14,10 +14,10 @@ function Navbar() {
   return (
     <div className={`flex max-w-screen justify-around items-center h-16 ${theme === 'dark' ? 'bg-slate-900' : ''}`}>
       <div>
-        <img className={`w-20 h-14 ${theme === 'dark' ? 'invert' : ''}`} src={Logo} alt="" />
+        <img className={`xl:w-20 xl:h-14 w-14 h-10 ${theme === 'dark' ? 'invert' : ''}`} src={Logo} alt="" />
       </div>
       <div>
-        <ul className={`flex gap-8 list-none font-semibold ${theme === 'dark' ? 'text-white' : ''}`}>
+        <ul className={`hidden xl:flex gap-8 list-none font-semibold ${theme === 'dark' ? 'text-white' : ''}`}>
           <li>MENU</li>
           <li>LOCATION</li>
           <li>ABOUT</li>
@@ -27,8 +27,8 @@ function Navbar() {
       <div>
         <img onClick={toggleTheme} className="cursor-pointer w-8 h-8" src={theme === 'dark' ? day : night} alt="themeIcon" />
       </div>
-      <div>
-        <button className={`w-32 h-9 bg-red-600 font-bold text-white ${theme === 'dark' ? 'bg-cyan-600' : ''}`}>Login</button>
+      <div className="w-1/3">
+        <button className={`xl:w-32 xl:h-9 xl:p-0 p-2 w-11/12 max-w-40 h-3/4 font-bold text-white ${theme === 'dark' ? 'bg-cyan-600' : 'bg-red-600'}`}>Login</button>
       </div>
     </div>
   );
